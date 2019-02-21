@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>REGISTER ACCOUNT</title>
+<link href="register.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="register.js"></script>
+	
+	
+</head>
+
+<body background="images/gallery/Background-Narrow.jpg" height="100%">
+	
+<div margin="100">
+	<div id="id01" class="modal">
+    
+     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><a href="index.html">&times;</a></span>
+     
+	</div>
+     
+	
+	<form action="../../../../../xampp/htdocs/LOGIN/register.php" name="Registration" method="post"  onSubmit="return(validate());" >
+	
+	<table width="25%"  background="transparent" align="center" >
+	
+	<tr>
+		<td align="center">
+		<h1 ><span style="color:aqua">REGISTER ACCOUNT</span></h1>
+			<h5><span style="color:mediumaquamarine">If you already have an account with us, please login at the </span>
+		  <span onClick="HelloFun();" style="color:mediumvioletred;"><u><a href="login.html">login page</a></u></span></h5>
+	
+			<h2><span style="color:aqua">YOUR PERSONAL DETAILS</span></h2>
+		</td>
+	</tr>
+	</table>
+	
+	
+	
+	<table cellpadding="10" width="25%"  align="center"  background="transparent">
+	
+	<tr>
+		<td> *Username :</td>
+		<td><input type="text" name="username" size="30"></td>
+	</tr>
+	
+	<tr>
+		<td> *Password :</td>
+		<td><input type="text" name="password" size="30"></td>
+	</tr>
+	
+	
+	<tr>
+		<td> *First Name :</td>
+		<td><input type="text" name="firstname" size="30"></td>
+	</tr>
+	
+	<tr>
+		<td>*Last Name :</td>
+		<td><input type="text" name="lastname" size="30"></td>
+	</tr>
+	<tr>
+		<td>*Gender :</td>
+		<td>
+			<input type="radio" name="gender" value="male" size="10">Male
+			<input type="radio" name="gender" value="Female" size="10">Female
+		</td>
+	</tr>
+	<tr>
+		<td>*E-mail :</td>
+		<td><input type="text" name="email" size="30"></td>
+	</tr>
+	<tr>
+		<td>*Telephone :</td>
+		<td><input type="text" name="telephone" size="30"></td>
+	</tr>
+	<tr>
+		<td>Fax :</td>
+		<td><input type="text" name="fax" size="30"></td>
+	</tr>
+	
+	</table>
+		
+
+	
+	<div>
+	<table cellpadding="30" width="20%"  align="center"  background="transparent">
+	
+	<tr>
+		
+		<td ></td>
+		<td >
+			<br>
+			<input type="reset" />
+			<input type="submit" value="Submit" onClick="validate()"/>
+		<br>
+		</td>
+
+ 	 </tr>
+	
+	</form>
+	</div>
+	
+</div>	
+	
+	
+</body>
+</html>
